@@ -1,0 +1,89 @@
+\documentclass[11pt]{report}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{Sweave}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{anysize} 
+\marginsize{1.78cm}{1.65cm}{1.78cm}{1.78cm} 
+
+\title{\Huge Universidad Nacional de Loja \\ 
+Área de la Energía las Industrias y los Recursos Naturales no Renovables \\
+Ingeniería en Sistemas \\}
+
+\author{\includegraphics[width=5cm, height=5cm]{unl.jpg} \\\\\\\\
+Antonio Aguilar Soto \\ waaguilars@unl.edu.ec \\\\
+ECINF7224}\\\\
+
+\begin{document}
+\input{1900481878_Grupo_A-concordance}
+\maketitle
+
+\begin{center}\textbf{Análisis de Datos}\end{center}
+\textbf{¿Es aplicable la ingeniería de software cuando se elaboran webapps? Si es así, ¿cómo puede
+modificarse para que asimile las características únicas de éstas?}\\
+
+Si es aplicable ya que permite a los usuarios de la web brindar capacidad de informatica e informacion de sistemas y aplicaciones basadas en la web. Las webapps se han comvertido en herramientas de computo que no solo proporcionan funciones aisladas al usuario si no que tambien nos podemos dar cuanta que se han integrado a datos corporativos, a negocios. Los webapps son una de las varias categorias de software de sistemas y aplicaciones basadas en la web donde involucran una mezcla entre las publicaciones impresas y el desarrollo de software y la computacion entre comunicaciones.
+\\\\
+\textbf{¿Un breve descripción del dataset Titanic?}
+
+Este conjunto de datos proporciona información sobre el destino de los pasajeros en el primer viaje fatal del trasatlántico Titanic, que se resumen de acuerdo a la situación económica (clase), el sexo, la edad y la supervivencia.
+\\\\
+\textbf{Mostar el Dataset}
+\begin{Schunk}
+\begin{Soutput}
+, , Age = Child, Survived = No
+
+      Sex
+Class  Male Female
+  1st     0      0
+  2nd     0      0
+  3rd    35     17
+  Crew    0      0
+
+, , Age = Adult, Survived = No
+
+      Sex
+Class  Male Female
+  1st   118      4
+  2nd   154     13
+  3rd   387     89
+  Crew  670      3
+
+, , Age = Child, Survived = Yes
+
+      Sex
+Class  Male Female
+  1st     5      1
+  2nd    11     13
+  3rd    13     14
+  Crew    0      0
+
+, , Age = Adult, Survived = Yes
+
+      Sex
+Class  Male Female
+  1st    57    140
+  2nd    14     80
+  3rd    75     76
+  Crew  192     20
+\end{Soutput}
+\end{Schunk}
+\\\\
+\textbf{Numero total de casos en el Dataset}
+\begin{Schunk}
+\begin{Soutput}
+[1] 2201
+\end{Soutput}
+\begin{Soutput}
+Number of cases in table: 2201 
+Number of factors: 4 
+Test for independence of all factors:
+	Chisq = 1637.4, df = 25, p-value = 0
+	Chi-squared approximation may be incorrect
+\end{Soutput}
+\end{Schunk}
+\clearpage \newpage
+\textbf{Licencia}\\\\\\
+\includegraphics[width=3cm, height=2cm]{licencia.png}
+\end{document}}

@@ -1,0 +1,47 @@
+\documentclass[11pt]{report}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{Sweave}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{anysize} 
+\marginsize{1.78cm}{1.65cm}{1.78cm}{1.78cm} 
+
+\title{\Huge Universidad Nacional de Loja \\ 
+Área de la Energía las Industrias y los Recursos Naturales no Renovables \\
+Ingeniería en Sistemas \\}
+
+\author{\includegraphics[width=5cm, height=5cm]{unl.jpg} \\\\\\\\
+Antonio Aguilar Soto \\ waaguilars@unl.edu.ec \\\\
+ECINF7224}\\\\
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle
+
+\begin{center}\textbf{Análisis de Datos}\end{center}
+\textbf{1.-¿Es aplicable la ingeniería de software cuando se elaboran webapps? Si es así, ¿cómo puede
+modificarse para que asimile las características únicas de éstas?}\\
+
+Si es aplicable ya que permite a los usuarios de la web brindar capacidad de informatica e informacion de sistemas y aplicaciones basadas en la web. Las webapps se han comvertido en herramientas de computo que no solo proporcionan funciones aisladas al usuario si no que tambien nos podemos dar cuanta que se han integrado a datos corporativos, a negocios. Los webapps son una de las varias categorias de software de sistemas y aplicaciones basadas en la web donde involucran una mezcla entre las publicaciones impresas y el desarrollo de software y la computacion entre comunicaciones.
+\\\\
+\textbf{2.-¿Un breve descripción del dataset Titanic?}
+
+Este conjunto de datos proporciona información sobre el destino de los pasajeros en el primer viaje fatal del trasatlántico Titanic, que se resumen de acuerdo a la situación económica (clase), el sexo, la edad y la supervivencia.
+\\\\
+\textbf{3.-¿Mostar el Dataset?}
+<<eval=TRUE, echo=FALSE>>=
+require(utils)
+Titanic
+@
+\\\\
+\textbf{4.-¿Numero total de casos en el Dataset?}
+<<eval=TRUE, echo=FALSE>>=
+require(utils)
+sum(Titanic)
+summary(Titanic)
+@
+\clearpage \newpage
+\textbf{Licencia}\\\\\\
+\includegraphics[width=3cm, height=2cm]{licencia.png}
+\end{document}}
